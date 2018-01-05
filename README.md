@@ -37,3 +37,11 @@ get_dict_with_longest_values(get_placeholders_in(
     "Here is a {thing} for you: {smiley}", "Here is a smiley for you: :-)"))
 => {'thing': 'smiley', 'smiley': ':-)'}
 ```
+
+## Compatibility
+
+Python 2 and Python 3 both work. :tada:
+
+## License
+
+MIT-licensed. See LICENSE file.
