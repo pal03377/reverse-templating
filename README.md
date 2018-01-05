@@ -19,7 +19,8 @@ get_placeholders_in("What a {adjective} {whatIsThis}!", "What a great tool!")
 => [{'adjective': 'great', 'whatIsThis': 'tool'}]
 ```
 ```
-get_placeholders_in("What a {adjective} {whatIsThis}!", "WHAT a great tool!") # case sensitive by default => WHAT does not match
+# case sensitive by default => WHAT does not match
+get_placeholders_in("What a {adjective} {whatIsThis}!", "WHAT a great tool!")
 => []
 ```
 ```
@@ -27,7 +28,8 @@ get_placeholders_in("What a {adjective} {whatIsThis}!", "WHAT a great tool!", ca
 => [{'adjective': 'great', 'whatIsThis': 'tool'}]
 ```
 ```
-get_placeholders_in("Here is a {thing} for you: {smiley}", "Here is a smiley for you: :-)") # You'll get multiple possibilities as the lib doesn't know how long the smiley should be.
+# You'll get multiple possibilities as the lib doesn't know how long the smiley should be.
+get_placeholders_in("Here is a {thing} for you: {smiley}", "Here is a smiley for you: :-)")
 => [{'thing': 'smiley', 'smiley': ':'}, {'thing': 'smiley', 'smiley': ':-'}, {'thing': 'smiley', 'smiley': ':-)'}]
 ```
 ```
